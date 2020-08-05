@@ -45,7 +45,6 @@ const getForecast =
     const response = await fetch(urlToFetch);
     if (response.ok) {
       const forecast = await response.json();
-      console.log(forecast);
       renderForecast(forecast)
     } else {
       throw new Error('Request failed!');
